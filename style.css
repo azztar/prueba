@@ -38,6 +38,7 @@ body {
 
 .image__conte {
     width: 60vh;
+    margin: 2rem;
 
 }
 
@@ -49,6 +50,7 @@ ul {
     text-decoration: none;
     gap: 1rem;
     color: var(--gra);
+    margin: 2.5rem;
 }
 
 
@@ -181,63 +183,96 @@ ul {
     gap: 1rem;
 }
 
+.research,
+.mark,
 .design {
     text-align: start;
     background-color: var(--whi);
     background-image: url(./Vectores/Ellipse\ 14.svg);
     background-repeat: no-repeat;
-   background-position: top;
+    background-position: top;
     border-radius: 4%;
     height: 300px;
-    width: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
 }
 
-.design__img{
+.research__img,
+.mark__img,
+.design__img {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 1rem;
 }
 
-
+.research___titulo,
+.mark___titulo,
 .design___titulo {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 2rem;
 }
 
-.desing__text{
-    background-color: aqua;
+.research__text,
+.mark__text,
+.desing__text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+
+
+.habilidades {
+    color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 3rem;
 }
 
-.mark {
-    background-color: var(--whi);
-    border-radius: 4%;
-    background-image: url(./Vectores/Ellipse\ 14.svg);
-    border-radius: 4%;
-    height: 200px;
-    width: 200px;
-
-}
-
-.research {
-    background-color: var(--whi);
-    background-image: url(./Vectores/Ellipse\ 14.svg);
-    border-radius: 4%;
-    height: 200px;
-    width: 200px;
-}
-
-.skills {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+
+}
+
+
+.progreso {
+    width: 350px;
+    height: 15px;
+    background-color: var(--gra);
+    border-radius: 10px;
+}
+
+.progress1 {
+    width: var(--w);
+    height: 100%;
+    background-color: var(--blue);
+    border-radius: 10px;
+    animation: aumentar 5s ease;
+}
+
+@keyframes aumentar {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--w)
+    }
 }
 
 .porta {
@@ -255,9 +290,109 @@ ul {
     gap: 1rem;
 }
 
+.slider {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 95%;
+    object-fit: cover;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: center;
+    align-self: flex-end;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+    position: sticky;
+}
+
 .contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: var(--whi);
+
+    ;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: var(--whi);
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+
+.contenedor_5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.contenedor_5-contenedor {
+    width: 70%;
+    min-width: 180px;
+    max-width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+
+.contacto_imagen-imagen-dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+.icono-contacto {
+    width: 5rem;
+    position: absolute;
+    height: 13%;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 20px;
+    align-items: flex-start;
 }

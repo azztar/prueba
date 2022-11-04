@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <title>Portafolio</title>
 </head>
 
@@ -64,63 +65,134 @@
         <div class="service__box">
             <div class="design">
                 <div class="design__img"><img src="./íconos/pencil.svg" alt="pencil"></div>
-                <div class="design___titulo"><h2>UX/UI Design</h2>
+                <div class="design___titulo">
+                    <h2>UX/UI Design</h2>
                 </div>
-                <div class="desing__text"><p>Desde diseño hasta implementacion del desarrollo</p></div>
-                
+                <div class="desing__text">
+                    <p>Desde diseño hasta implementacion del desarrollo</p>
+                </div>
+
             </div>
+
+
             <div class="mark">
-                <h2>Marketing</h2>
-                <p>Desde diseño hasta implementacion del desarrollo</p>
+                <div class="mark__img"><img src="./íconos/speaker.svg" alt="speaker"></div>
+                <div class="mark___titulo">
+                    <h2>Marketing</h2>
+                </div>
+                <div class="mark__text">
+                    <p>Desde diseño hasta implementacion del desarrollo</p>
+                </div>
+
             </div>
+
+
             <div class="research">
-                <h2>research</h2>
-                <p>Desde diseño hasta implementacion del desarrollo</p>
+                <div class="research__img"><img src="./íconos/search.svg" alt="search"></div>
+                <div class="research___titulo">
+                    <h2>research</h2>
+                </div>
+                <div class="research__text">
+                    <p>Desde diseño hasta implementacion del desarrollo</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="skills">
+    <div class="habilidades">
         <h2>Mis Habilidades</h2>
     </div>
+
+    <div class="skills">
+        <div class="container">
+            <div class="container_text">
+                <h3 class="habilidad">Marketing</h3>
+                <div class="porcent">90%</div>
+            </div>
+            <div class="progreso">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container_text">
+                <h3 class="habilidad">UI Design</h3>
+                <div class="porcent">85%</div>
+            </div>
+            <div class="progreso">
+                <div class="progress1" style="--w:40%"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container_text">
+                <h3 class="habilidad">UX Research</h3>
+                <div class="porcent">80%</div>
+            </div>
+            <div class="progreso">
+                <div class="progress2"></div>
+            </div>
+        </div>
+    </div>
+
     <div>
         <h2 class="porta">Mi portafolio</h2>
     </div>
 
     <div class="slider">
-        <ul>
-            <li>
-                <img src="./Logos- Imágenes/ejemplo1.jpg">
-            </li>
-            <li>
-                <img src="Logos- Imágenes/ejemplo2.jpg">
-            </li>
-            <li>
-                <img src="./Logos- Imágenes/ejemplo3.jpg">
-            </li>
-            <li>
-                <img src="./Logos- Imágenes/ejemplo5.jpg">
-            </li>
-        </ul>
+        <img src="./Logos- Imágenes/ejemplo1.jpg" alt="portafolioimg1" class="portfolio_img">
+        <img src="./Logos- Imágenes/ejemplo2.jpg" alt="portafolioimg2" class="portfolio_img">
+        <img src="./Logos- Imágenes/ejemplo3.jpg" alt="portafolioimg1" class="portfolio_img">
+        <img src="./Logos- Imágenes/ejemplo5.jpg" alt="portafolioimg1" class="portfolio_img">
     </div>
 
-    <div class="contacto">
-        <div class="phone">
-            <img src="./íconos/phone.svg" alt="numero de celular">
-            <h3>Numero de celular</h3>
-            <p> =5730001234556</p>
-        </div>
-        <div class="email">
-            <img src="./íconos/mail.svg" alt="correo electronico">
-            <h3>Email</h3>
-            <p>azztar@dev.co</p>
-        </div>
+    <section class="contact" id="contacto">
+        <h2 class="title_section">Contacto</h2>
 
-    </div>
+        <div class="contenedor_5">
+            <div class="contenedor_5-contenedor">
+                <div class="contacto_imagen">
+                    <div class="contacto_imagen-imagen-uno">
+                        <img src="./Vectores/Ellipse 14.svg" alt="vector" class="vector2">
+                    </div>
+                    <div class="contacto_imagen-imagen-dos">
+                        <img src="./íconos/phone.svg" alt="teléfono" class="icono-contacto">
+                    </div>
+
+                </div>
+                <div class="texto">
+                    <h2 class="contenedor_5-design-title">Número Celular</h2>
+                    <p class="design-text">310682000</p>
+
+                </div>
+            </div>
+
+            <div class="contenedor_5-contenedor">
+                <div class="contacto_imagen">
+                    <div class="contacto_imagen-imagen-uno">
+                        <img src="./Vectores/Ellipse 14.svg" alt="vector" class="vector2">
+                    </div>
+                    <div class="contacto_imagen-imagen-dos">
+                        <img src="./íconos/mail.svg" alt="teléfono" class="icono-contacto">
+                    </div>
+
+                </div>
+                <div class="texto">
+                    <h2 class="contenedor_5-design-title">Email</h2>
+                    <p class="design-text">tajohe@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <footer>
-        <p>Hecho con en Academlo</p>
+        <div>
+            <p>Hecho con <img src="./assets/img/images/Corazón Academlo/corazón.png" alt="corazón" class="corazon"> en
+                academlo</p>
+        </div>
     </footer>
+
 
 </body>
 
